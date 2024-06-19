@@ -1,0 +1,47 @@
+What is HTTP?
+
+HTTP stands for Hypertext Transfer Protocol. It is the foundation of the World Wide Web and is used by browsers to load web pages.
+
+A typical example is when your browser sends an HTTP request to a web server after entering an URL. The HTTP command then provides
+ an HTTP response to the web server with the webpage’s contents.
+
+What is HTTP 1.1?
+
+Officially standardized in 1999, HTTP 1.1 is the most recent version of HTTP. Just like its predecessor, this application protocol 
+transfers data between web servers and clients. However, what makes it different is the incorporation of PUT, DELETE, and OPTIONS, 
+and it includes features like HTTP pipelining and the chunked transfer encoding. Due to all these features, HTTP 1.1 provides better
+ performance and more flexibility than HTTP 1.
+
+
+What is HTTP 2?
+
+HTTP 2 is the second major version of the HTTP network protocol used for transmitting data over the Internet. It was developed to improve
+ the performance and efficiency of web applications by reducing the amount of data sent over the wire. This reduces the number of round trips
+  required to load a webpage and allows for a more efficient application of resources.
+
+
+These are some of the parameters based on which we will compare both the HTTP versions.
+
+Development
+	HTTP1.1 It was developed in the year 1997	
+    HTTP2.It was developed in the year 2015.
+
+Compression
+	HTTP1.1 It compresses data by itself.	
+    HTTP2 It uses HPACK for data compression.
+Binary Protocol
+	HTTP1.1 A text-based protocol uses plain text to encode and transmit data.	
+    HTTP2 It works on the binary protocol as a series of binary codes encode and transmit data rather than plain text.
+Security	
+    HTTP1.1 The client sends a request to a server, and the server sends a response back to the client.	
+    HTTP2 A different underlying protocol called Secure Remote Protocol 2 (SRP2) establishes a secure connection between a client and a server.
+Multiplexing	
+    HTTP1.1 A separate connection is established for each request and response, which can add overhead and latency to the communication process.
+    HTTP2	It allows multiplexing so multiple requests and responses can be sent over a single connection.
+Buffer Overflow	
+    HTTP 1.1 cannot handle buffer overflow vulnerabilities due to the lack of sufficient measures.
+    HTTP 2 includes measures to prevent buffer overflow vulnerabilities.
+Performance
+	HTTP 1.1 does not include any in-built features, so the performance it delivers is less efficient.
+    HTTP 2 is designed to be more efficient and performant than HTTP 1.1. This is because HTTP 2 includes several features like multiplexing,
+           binary protocol and header compression.
